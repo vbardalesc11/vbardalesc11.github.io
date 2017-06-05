@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 </style>
@@ -45,7 +50,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:10px">    
+<div class="w3-container w3-content" style="max-width:140px;margin-top:10px">    
   <!-- The Grid -->
   <div class="w3-row">
     <!-- Left Column -->
@@ -398,6 +403,30 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+
+
+//Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+//Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+//Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+ if (mySidebar.style.display === 'block') {
+     mySidebar.style.display = 'none';
+     overlayBg.style.display = "none";
+ } else {
+     mySidebar.style.display = 'block';
+     overlayBg.style.display = "block";
+ }
+}
+function w3_close() {
+ mySidebar.style.display = "none";
+ overlayBg.style.display = "none";
+}
+
 </script>
 
 </body>
