@@ -90,7 +90,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     </div>
     
      <!-- Middle Column -->
-    <div class="w3-col m7">
+    <div class="w3-col m8">
     
       <div class="w3-row-padding">
         <div class="w3-col m12">
@@ -327,14 +327,35 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 </div>
 <br>
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>Footer</h5>
-</footer>
+</header>
 
-<footer class="w3-container w3-theme-d5">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+<!-- Footer -->
+<hr id="footer">
+<footer id="myFooter">
+    <div class="w3-third" >
+      <h3></h3>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Contactame</h3>
+      <a href=“mailto:vbardalesc15@unc.edu.pe”>vbardalesc15@unc.edu.pe</a>
+      <p>Teléfonos: 076 369727, 076 362878</p>
+      <address>Dirección Regional de Agricultura Cajamarca <br /> Última modificación: 29 de mayo de 2017
+	  </address>
+	  <a href="http://www.agriculturacajamarca.gob.pe">Gobierno Regional</a>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>Gobierno Regional Cajamarca</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/img2/g1.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Gobierno Regional Cajamarca</span><br>
+          <span>Por una gran nacion</span>
+        </li>
+      </ul> 
+    </div>
+  </footer>
  
 <script>
 // Accordion
@@ -359,7 +380,31 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+
+
+//Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+//Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+//Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+ if (mySidebar.style.display === 'block') {
+     mySidebar.style.display = 'none';
+     overlayBg.style.display = "none";
+ } else {
+     mySidebar.style.display = 'block';
+     overlayBg.style.display = "block";
+ }
+}
+function w3_close() {
+ mySidebar.style.display = "none";
+ overlayBg.style.display = "none";
+}
+
 </script>
 
 </body>
-</html> 
+</html>
