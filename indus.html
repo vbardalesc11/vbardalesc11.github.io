@@ -70,7 +70,7 @@ html, body, h1, h2, h3, h4, h5 {
 		<div class="w3-overlay w3-hide-large" onclick="w3_close()"
 			style="cursor: pointer" title="close side menu" id="myOverlay"></div>
 
-<div class="carousel">
+<div class="carousel1">
     <a class="carousel-item" href="#one!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
     <a class="carousel-item" href="#two!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
     <a class="carousel-item" href="#three!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
@@ -495,8 +495,16 @@ function w3_close() {
 }
 
 $(document).ready(function(){
-    $('.carousel').carousel();
+    $('.carousel1').carousel();
   });
+  
+$('.carousel1').carousel('next');
+$('.carousel1').carousel('next', 3); // Move next n times.
+// Previous slide
+$('.carousel1').carousel('prev');
+$('.carousel1').carousel('prev', 4); // Move prev n times.
+// Set to nth slide
+$('.carousel1').carousel('set', 4);
 
 </script>
 
