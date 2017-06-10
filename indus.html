@@ -16,14 +16,6 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-          
-
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
@@ -77,14 +69,7 @@ html, body, h1, h2, h3, h4, h5 {
 		<div class="w3-overlay w3-hide-large" onclick="w3_close()"
 			style="cursor: pointer" title="close side menu" id="myOverlay"></div>
 
-<div class="carousel1">
-    <a class="carousel-item" href="#one!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
-    <a class="carousel-item" href="#two!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
-    <a class="carousel-item" href="#three!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
-    <a class="carousel-item" href="#four!"><img src="/img2/g1.jpg" alt="ganaderia"></a>
-  </div>
-  
-  
+
 
 
 		<!-- Page Container -->
@@ -369,7 +354,8 @@ html, body, h1, h2, h3, h4, h5 {
 				</div>
 
 				<!-- Right Column -->
-				<div class="w3-col m2">
+				<div class="w3-col m2 w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+			style="z-index: 3; width: 235px; margin-top: 20px;" id="mySidebar">
 					<div class="w3-card-2 w3-round w3-white w3-center">
 						<div class="w3-container">
 							<button class="button.btn.btn-social.btn-fill.btn-facebook"></button>
@@ -500,19 +486,6 @@ function w3_close() {
  mySidebar.style.display = "none";
  overlayBg.style.display = "none";
 }
-
-$(document).ready(function(){
-    $('.carousel1').carousel();
-    $('.carousel1').carousel('next');
-    $('.carousel1').carousel('next', 3); // Move next n times.
-    // Previous slide
-    $('.carousel1').carousel('prev');
-    $('.carousel1').carousel('prev', 4); // Move prev n times.
-    // Set to nth slide
-    $('.carousel1').carousel('set', 4);
-});
-  
-
 
 </script>
 
