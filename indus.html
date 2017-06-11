@@ -354,8 +354,7 @@ html, body, h1, h2, h3, h4, h5 {
 				</div>
 
 				<!-- Right Column -->
-				<div class="w3-col m2 w3-sidebar w3-collapse w3-large w3-theme-l5 w3-animate-right"
-			style="z-index: 3; width: 235px; margin-top: 50px;" id="mySidebar">
+				<div class="w3-col m2">
 					<div class="w3-card-2 w3-round w3-white w3-center">
 						<div class="w3-container">
 							<button class="button.btn.btn-social.btn-fill.btn-facebook"></button>
@@ -440,54 +439,7 @@ html, body, h1, h2, h3, h4, h5 {
 		</div>
 	</footer>
 
-	<script>
-// Accordion
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme-d1";
-    } else { 
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-theme-d1", "");
-    }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-
-
-//Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-//Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-//Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
- if (mySidebar.style.display === 'block') {
-     mySidebar.style.display = 'none';
-     overlayBg.style.display = "none";
- } else {
-     mySidebar.style.display = 'block';
-     overlayBg.style.display = "block";
- }
-}
-function w3_close() {
- mySidebar.style.display = "none";
- overlayBg.style.display = "none";
-}
-
-</script>
+<script src = "js/js.js" type="text/javascript"></script>
 
 </body>
 </html>
